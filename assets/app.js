@@ -1,4 +1,4 @@
-var currentNumberWrapper = document.getElementById("currentNumber");
+var currentNumberWrapper = document.getElementsByClassName("currentNumber");
 
 var currentNumber = 0;
 
@@ -10,6 +10,5 @@ function increment() {
 function decrement() {
     currentNumber = currentNumber - 1;
     currentNumberWrapper.innerHTML = currentNumber;
+ 
 }
-
-console.log("ola")
