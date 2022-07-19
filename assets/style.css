@@ -9,8 +9,9 @@ html, body, h2 {
 
 main {
     background-color: #D97904;
-    color: white;
-    -webkit-text-stroke: .8px #301302;
+    color: rgb(59, 20, 3);
+    -webkit-text-stroke: .6px #301302;
+    padding: 30px;
 }
 
 
@@ -33,7 +34,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 #icones, .icones {
@@ -61,12 +61,31 @@ h2 {
     font-size: 20px;
 }
 
+.botao-comprar {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.preco {
+    margin-top: 0px;
+    padding: 0;
+}
+
 #footer {
     background-color: black;
-    height: 80px;
+    height: 100px;
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+.img-footer {
+    width: 24px;
+    padding: 0;
+    margin: 10px;
+}
 
+.footer-texto {
+    word-spacing: 2px;
+}
