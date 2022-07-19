@@ -25,25 +25,24 @@
 <section class="produtos_geral">
     <div><img src="images/chevrons-left.svg" alt="Seta para direita"></div>
 
-   <div class="container_produtos" id="produto1">
+   <div class="container_produtos">
         <p>Cerveja Original 350ml</p>
-        <div class="produtos"><img src="images/cerveja-original-pilsen-350ml.jpg" alt="Cerveja Original"></div>
-            <div class="counter">
-                <button name="subtrair" onclick="decrement('counterproduto1')">-</button>
-                <span id="counterproduto1">0</span>
-                <button name="adicionar" onclick="increment('counterproduto1')">+</button>
-             </div>
-        <div class="preco"><p>R$3,29</p></div>
+        <img class="produtos" src="images/cerveja-original-pilsen-350ml.jpg" alt="Cerveja Original">
+        <div id="counter">
+            <button name="subtrair" onclick="decrement()">-</button>
+            <span id="currentNumber">0</span>
+            <button name="adicionar" onclick="increment()">+</button>
+        </div>
+        <div class="preco"><p>R$ 3,29</p></div>
     </div>
 
-    <div class="container_produtos" id="prod2">
+   <div class="container_produtos">
         <p>Cerveja Buddweiser 350ml</p>
-        <div class="produtos"><img src="images/cerveja_budweiser_lata_269ml_1e927d59-7383-4321-b6cb-d5b0e6d83e85.jpg" alt="Cerveja Buddweiser"></div>
-        <div class="counter">
-            <button name="subtrair" onclick="decrement('counterproduto2')">-</button>
-            <span id="counterproduto2">0</span>
-            <button name="adicionar" onclick="increment('counterproduto2')">+</button>
-         </div>
+        <img class="produtos" src="images/cerveja_budweiser_lata_269ml_1e927d59-7383-4321-b6cb-d5b0e6d83e85.jpg" alt="Cerveja Buddweiser">
+        <div id="counter">
+            <button name="subtrair" onclick="decrement()">-</button>
+            <span id="currentNumber">0</span>
+            <button name="adicionar" onclick="increment()">+</button>
         <div class="preco"><p>R$ 2,99</p></div>
     </div>
 
