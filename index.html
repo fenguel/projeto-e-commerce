@@ -1,174 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Silvana Delivery</title>
 </head>
-<body>
-<header>
-<section id="logo">
-<img src="images/LogoSilvana.png" alt="Logo Silvana Delivery">   
-</section>
-<section id="grupodeicones">
-    
-    <div class="icones"></p><img src="images/search.svg" alt="Busca"></div>
-    <div class="icones"><img src="images/user.svg" alt="Usuário"></div>
-    <div class="icones"><img src="images/shopping-cart.svg" alt="Carrinho"></div>
-    
-</section>
-</header>
+    <body>
+    <header id="header">
+        <section id="nav">
+            <div id="logo">
+                <img class= "logo" src="images/LogoSilvana.png" alt="Logo Silvana Delivery">   
+            </div>
+            <div id="icones">
+                <img class="icones" src="images/search.svg" alt="Busca">
+                <img class="icones" src="images/user.svg" alt="Usuário">
+                <img class="icones" src="images/shopping-cart.svg" alt="Carrinho">           
+            </div>   
+        </section>
+    </header>
 <main>
-<section>
+    <h2>BEBIDAS</h2>
+<section class="produtos_geral">
     <div><img src="images/chevrons-left.svg" alt="Seta para direita"></div>
 
-    <div>
-        <div class="titulo"><p>Cerveja Original 350ml</p></div>
-        <div class="produtos"><img src="images/cerveja-original-pilsen-350ml.jpg" alt="Cerveja Original"></div>
-            <div id="counter">
-                <button name="subtrair" onclick="decrement()">-</button>
-                <span id="currentNumber">0</span>
-                <button name="adicionar" onclick="increment()">+</button>
-             </div>
-        <div class="preco"><p>R$3,29</p></div>
+    <div class="container_produtos">
+        <p>Cerveja Original 350ml</p>
+        <img class="produtos" src="images/cerveja-original-pilsen-350ml.jpg" alt="Cerveja Original">
+        <div id="counter">
+            <button name="subtrair" onclick="decrement()">-</button>
+            <span id="currentNumber">0</span>
+            <button name="adicionar" onclick="increment()">+</button>
+        </div>
+        <div class="preco"><p>R$ 3,29</p></div>
     </div>
 
-    <div>
-        <div class="titulo"><p>Cerveja Buddweiser 350ml</p></div>
-        <div class="produtos"><img src="images/cerveja_budweiser_lata_269ml_1e927d59-7383-4321-b6cb-d5b0e6d83e85.jpg" alt="Cerveja Buddweiser"></div>
+    <div class="container_produtos">
+        <p>Cerveja Buddweiser 350ml</p>
+        <img class="produtos" src="images/cerveja_budweiser_lata_269ml_1e927d59-7383-4321-b6cb-d5b0e6d83e85.jpg" alt="Cerveja Buddweiser">
         <div id="counter">
             <button name="subtrair" onclick="decrement()">-</button>
             <span id="currentNumber">0</span>
             <button name="adicionar" onclick="increment()">+</button>
          </div>
-        <div class="preco"><p>R$2,99</p></div>
+        <div class="preco"><p>R$ 2,99</p></div>
     </div>
 
-    <div>
-        <div class="titulo"><p>Cerveja Colorado 600ml</p></div>
-        <div class="produtos"><img src="images/colorado-appia.jpg" alt="Cerveja Colorado"></div>
+    <div class="container_produtos">
+        <p>Cerveja Colorado 600ml</p>
+        <img class="produtos" src="images/colorado-appia.jpg" alt="Cerveja Colorado">
         <div id="counter">
             <button name="subtrair" onclick="decrement()">-</button>
             <span id="currentNumber">0</span>
             <button name="adicionar" onclick="increment()">+</button>
          </div>
-        <div class="preco"><p>R$8,99</p></div>
+        <div class="preco"><p>R$ 8,99</p></div>
     </div>
 
-    <div>
-        <div class="titulo"><p>Coca-Cola 2l</p></div>
-        <div class="produtos"><img src="images/coca.jpg" alt="Coca-Cola"></div>
+    <div class="container_produtos">
+        <p>Coca-Cola 2l</p>
+        <img class="produtos" src="images/coca.jpg" alt="Coca-Cola">
         <div id="counter">
             <button name="subtrair" onclick="decrement()">-</button>
             <span id="currentNumber">0</span>
             <button name="adicionar" onclick="increment()">+</button>
          </div>
-        <div class="preco"><p>R$6,99</p></div>
+        <div class="preco"><p>R$ 6,99</p></div>
     </div>
 
-    <div>
-        <div class="titulo"><p>Guaraná Antártica 2l</p></div>
-        <div class="produtos"><img src="images/refrigerante-guarana-antarctica-2l.jpg" alt="Guaraná Antártica"></div>
+    <div class="container_produtos">
+       <p>Guaraná Antártica 2l</p>
+        <img class="produtos" src="images/refrigerante-guarana-antarctica-2l.jpg" alt="Guaraná Antártica">
         <div id="counter">
             <button name="subtrair" onclick="decrement()">-</button>
             <span id="currentNumber">0</span>
             <button name="adicionar" onclick="increment()">+</button>
          </div>
-        <div class="preco"><p>6,99</p></div>
+        <div class="preco"><p>R$ 6,99</p></div>
     </div>
 
-    <div>
-        <div class="titulo"><p>Água Mineral 500ml</p></div>
-        <div class="produtos"><img src="images/agua.jpg" alt="Água"></div>
+    <div class="container_produtos">
+        <p>Água Mineral 500ml</p>
+        <img class="produtos" src="images/agua.jpg" alt="Água">
         <div id="counter">
             <button name="subtrair" onclick="decrement()">-</button>
             <span id="currentNumber">0</span>
             <button name="adicionar" onclick="increment()">+</button>
          </div>
-        <div class="preco"><p>R$1,99</p></div>
+        <div class="preco"><p>R$ 1,99</p></div>
     </div>
 
     <div><img src="images/chevrons-right.svg" alt="Seta para esquerda"></div>
 </section>
-
-<section>
+    <h2>CONVENIÊNCIA</h2>
+<section class="produtos_geral">
     <div><img src="images/chevrons-left.svg" alt="Seta para direita"></div>
 
-    <div>
-        <div class="titulo"><p>Isqueiro Bic Grande</p></div>
-        <div class="produtos"><img src="images/isqueiro-bic-maxi-j6.jpg" alt="Isqueiro"></div>
+    <div class="container_produtos">
+        <p>Isqueiro Bic Grande</p>
+        <img class="produtos" src="images/isqueiro-bic-maxi-j6.jpg" alt="Isqueiro">
         <div id="counter">
             <button name="subtrair" onclick="decrement()">-</button>
             <span id="currentNumber">0</span>
             <button name="adicionar" onclick="increment()">+</button>
          </div>
-        <div class="preco"><p>R$4,50</p></div>
+        <div class="preco"><p>R$ 4,50</p></div>
     </div>
 
-    <div>
-        <div class="titulo"><p>Amendoim Dori 320gr</p></div>
-        <div class="produtos"><img src="images/amendoim.jpg" alt="Amendoim"></div>
+    <div class="container_produtos">
+        <p>Amendoim Dori 320gr</p>
+        <img class="produtos" src="images/amendoim.jpg" alt="Amendoim">
         <div id="counter">
             <button name="subtrair" onclick="decrement()">-</button>
             <span id="currentNumber">0</span>
             <button name="adicionar" onclick="increment()">+</button>
          </div>
-        <div class="preco"><p>R$5,50</p></div>
+        <div class="preco"><p>R$ 5,50</p></div>
     </div>
 
-    <div>
-        <div class="titulo"><p>Cheetos 57gr</p></div>
-        <div class="produtos"><img src="images/cheetos.jpg" alt="Cheetos"></div>
+    <div class="container_produtos">
+        <p>Cheetos 57gr</p>
+        <img class="produtos" src="images/cheetos.jpg" alt="Cheetos">
         <div id="counter">
             <button name="subtrair" onclick="decrement()">-</button>
             <span id="currentNumber">0</span>
             <button name="adicionar" onclick="increment()">+</button>
          </div>
-        <div class="preco"><p>R$6,79</p></div>
+        <div class="preco"><p>R$ 6,79</p></div>
     </div>
 
-    <div>
-        <div class="titulo"><p>Ruffles 57gr</p></div>
-        <div class="produtos"><img src="images/ruffles.jpg" alt="Ruffles"></div>
+    <div class="container_produtos">
+        <p>Ruffles 57gr</p>
+        <img class="produtos" src="images/ruffles.jpg" alt="Ruffles">
         <div id="counter">
             <button name="subtrair" onclick="decrement()">-</button>
             <span id="currentNumber">0</span>
             <button name="adicionar" onclick="increment()">+</button>
          </div>
-        <div class="preco"><p>R$6,79</p></div>
+        <div class="preco"><p>R$ 6,79</p></div>
     </div>
     
-    <div>
-        <div class="titulo"><p>Gelo 800gr</p></div>
-        <div class="produtos"><img src="images/gelo_cubo_800g_ac2bab6e-04d4-42a1-a536-c7496b293b05.jpg" alt="Ruffles"></div>
+    <div class="container_produtos">
+        <p>Gelo 800gr</p>
+        <img class="produtos" src="images/gelo_cubo_800g_ac2bab6e-04d4-42a1-a536-c7496b293b05.jpg" alt="Ruffles">
         <div id="counter">
             <button name="subtrair" onclick="decrement()">-</button>
             <span id="currentNumber">0</span>
             <button name="adicionar" onclick="increment()">+</button>
-         </div>
-        <div class="preco"><p>R$6,79</p></div>
+        </div>
+        <div class="preco"><p>R$ 6,79</p></div>
     </div>
 
     <div><img src="images/chevrons-right.svg" alt="Seta para esquerda"></div>
 </section>
 
 </main>
-    
-
-<footer>
-    <section>
-        <div class="contato"><p>Karine Maiero</p></div>
-        <div class="git"><a href="https://github.com/KarineMaiero"><img src="images/github.svg" alt="GitHube"></a>
-        </div>
-    </section>
-    <section>
-        <div class="contato"><p>Felipe de Lima</p></div>
-        <div class="git"><a href="https://github.com/fenguel"><img src="images/github.svg" alt="GitHube"></a>
-        </div>
-    </section>
-</footer>
-    <script src="assets/scripts.js"></script>
-</body>
+        <footer id="footer">
+            <p>Feito por:</p><br>
+            <p>Karine Maiero</p>
+            <p>Felipe de Lima</p>
+            <a href="https://github.com/KarineMaiero"><img src="images/github.svg" alt="GitHub">
+            <a href="https://github.com/fenguel"><img src="images/github.svg" alt="GitHub">
+        </footer>
+            <script src="assets/scripts.js"></script>
+    </body>
 </html>
