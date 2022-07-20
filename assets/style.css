@@ -89,3 +89,32 @@ h2 {
 .footer-texto {
     word-spacing: 2px;
 }
+
+.bodyreceitas {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #D97904;
+}
+
+.drinks_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 25px 0 25px 0;
+}
+
+.boxdrinks {
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.imagensdrinks {
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.imagemprincipal {
+    height: 300px;
+    margin-left: 35px;
+}
+
