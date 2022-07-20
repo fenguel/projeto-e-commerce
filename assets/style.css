@@ -8,21 +8,27 @@ html, body, h2 {
 }
 
 main {
-    background-color: #D97904;
+    background-image: linear-gradient(#daa25e, #c9a377);
+    /*background-color: #d6a973;*/
     color: rgb(59, 20, 3);
     -webkit-text-stroke: .6px #301302;
     padding: 30px;
+    height: 82vh;
 }
 
 
 header {
-    background-color: #A63F03;
+    background-color: #3b1600;
     height: 60px;
 }
 
 h2 {
     text-align: center;
     font-size: 32px;
+}
+
+li {
+    font-size: 18px;
 }
 
 .logo {
@@ -44,7 +50,8 @@ h2 {
 .produtos {
     width: 200px;
     border-radius: 10px;
-    box-shadow:10px 13px 50px -13px rgba(0,0,0,0.75)
+    box-shadow: 10px 13px 50px -13px rgb(59, 20, 3);
+    border: 3px solid rgb(59, 20, 3);
 }
 
 #counter {
@@ -96,7 +103,12 @@ h2 {
 .bodyreceitas {
     display: flex;
     justify-content: space-evenly;
-    background-color: #D97904;
+    background-image: linear-gradient(#daa25e, #c9a377);
+    /*background-color: #D97904;*/
+}
+
+.drink {
+    margin: 60px;
 }
 
 .drinks_aside {
@@ -104,6 +116,7 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
     margin: 25px 0 25px 0;
+    color: rgb(59, 20, 3);
 }
 
 .boxdrinks {
@@ -115,12 +128,14 @@ h2 {
     box-sizing: border-box;
     height: 200px;
     border-radius: 15px;
+    border: 3px solid rgb(59, 20, 3)
 }
 
 .imagemprincipal {
     height: 300px;
     margin-left: 35px;
     border-radius: 15px;
+    border: 3px solid rgb(59, 20, 3);
 }
 
 #links {
@@ -133,6 +148,15 @@ h2 {
 .linksheader {
     text-decoration: none;
     color: black;
+}
+
+.textoheader {
+    font-size: 24px;
+    height: 25px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: white
 }
 
 .gits {
