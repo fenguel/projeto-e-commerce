@@ -114,11 +114,13 @@ h2 {
 .imagensdrinks {
     box-sizing: border-box;
     height: 200px;
+    border-radius: 15px;
 }
 
 .imagemprincipal {
     height: 300px;
     margin-left: 35px;
+    border-radius: 15px;
 }
 
 #links {
