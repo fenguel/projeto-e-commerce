@@ -79,26 +79,6 @@ li {
     padding: 0;
 }
 
-#footer {
-    background-color: black;
-    height: 100px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-footer {
-    width: 24px;
-    padding: 0;
-    margin: 10px;
-}
-
-.footer-texto {
-    word-spacing: 2px;
-    margin: 0 20px 0 20px;
-}
 
 .bodyreceitas {
     display: flex;
@@ -157,6 +137,27 @@ li {
     display: flex;
     align-items: center;
     color: white
+}
+
+#footer {
+    background-color: black;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-footer {
+    width: 24px;
+    padding: 0;
+    margin: 10px;
+}
+
+.footer-texto {
+    word-spacing: 2px;
+    margin: 0 20px 0 20px;
 }
 
 .gits {
