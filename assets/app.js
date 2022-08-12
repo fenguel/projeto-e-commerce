@@ -1,5 +1,3 @@
-
-
 function increment(id) {
     let element = document.getElementById(id);
     let counter = Number(element.textContent)+1;
