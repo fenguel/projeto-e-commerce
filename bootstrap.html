@@ -108,8 +108,15 @@
                 <a class="navbar-brand" href="#">
                     <img src="./images/user.svg" alt="Usuário" width="30">
                 </a>
-                <a class="navbar-brand" href="#">
-                    <img src="./images/shopping-cart.svg" alt="Usuário" width="30">
+                <div style="position: relative;">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/shopping-cart.svg" alt="Usuário" width="30">
+                        <div style="position: absolute;">
+                            <button type="button" class="btn btn-danger btn-sm" id="shopcartnav">
+                                <span aria-hidden="true" id="shopcar">0</span> 
+                              </button> 
+                          </div>  
+                </div> 
                 </a>
             </div>
         </div>
@@ -129,10 +136,10 @@
                 <h6 class="card-title">Cerveja Original 350ml</h6>
                 <p>R$ 3,29</p>
                 <div id="counter">
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                    <span id="counterprod4">0</span>
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                    <a href="#" class="btn btn-warning p-1">Comprar</a>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod1')"> - </button>
+                    <span id="counterprod1">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod1')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop1('shopcar')" >Comprar</button>
                 </div>
             </div>
         </div>
@@ -142,10 +149,10 @@
                 <h6 class="card-title">Cerveja Buddweiser 350ml</h6>
                 <p>R$ 3,79</p>
                 <div id="counter">
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                    <span id="counterprod4">0</span>
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                    <a href="#" class="btn btn-warning p-1">Comprar</a>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod2')"> - </button>
+                    <span id="counterprod2">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod2')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop2('shopcar')" >Comprar</button>
                 </div>
             </div>
         </div>
@@ -155,10 +162,10 @@
                 <h6 class="card-title">Cerveja Eisenbahn 350ml</h6>
                 <p>R$ 3,99</p>
                 <div id="counter">
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                    <span id="counterprod4">0</span>
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                    <a href="#" class="btn btn-warning p-1">Comprar</a>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod3')"> - </button>
+                    <span id="counterprod3">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod3')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop3('shopcar')" >Comprar</button>
                 </div>
             </div>
         </div>
@@ -171,7 +178,7 @@
                     <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
                     <span id="counterprod4">0</span>
                     <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                    <a href="#" class="btn btn-warning p-1">Comprar</a>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop4('shopcar')" >Comprar</button>
                 </div>
             </div>
         </div>
@@ -181,10 +188,10 @@
                 <h6 class="card-title">Cerveja Heineken 250ml</h6>
                 <p>R$ 4,49</p>
                 <div id="counter">
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                    <span id="counterprod4">0</span>
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                    <a href="#" class="btn btn-warning p-1">Comprar</a>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod5')"> - </button>
+                    <span id="counterprod5">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod5')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop5('shopcar')" >Comprar</button>
                 </div>
             </div>
         </div>
@@ -194,10 +201,10 @@
                 <h6 class="card-title">Cerveja Colorado 600ml</h6>
                 <p>R$ 8,99</p>
                 <div id="counter">
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                    <span id="counterprod4">0</span>
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                    <a href="#" class="btn btn-warning p-1">Comprar</a>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod6')"> - </button>
+                    <span id="counterprod6">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod6')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop6('shopcar')" >Comprar</button>
                 </div>
             </div>
         </div>
@@ -207,10 +214,10 @@
                 <h6 class="card-title">Refrigerante Coca-Cola 2l</h6>
                 <p>R$ 6,99</p>
                 <div id="counter">
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                    <span id="counterprod4">0</span>
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                    <a href="#" class="btn btn-warning p-1">Comprar</a>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod7')"> - </button>
+                    <span id="counterprod7">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod7')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop7('shopcar')" >Comprar</button>
                 </div>
             </div>
         </div>
@@ -220,10 +227,10 @@
                 <h6 class="card-title">Guaraná Antártica 2l</h6>
                 <p>R$ 6,99</p>
                 <div id="counter">
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                    <span id="counterprod4">0</span>
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                    <a href="#" class="btn btn-warning p-1">Comprar</a>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod8')"> - </button>
+                    <span id="counterprod8">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod8')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop8('shopcar')" >Comprar</button>
                 </div>
             </div>
         </div>
@@ -233,10 +240,10 @@
                 <h6 class="card-title">Água Mineral 500ml</h6>
                 <p>R$ 2,99</p>
                 <div id="counter">
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                    <span id="counterprod4">0</span>
-                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                    <a href="#" class="btn btn-warning p-1">Comprar</a>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod9')"> - </button>
+                    <span id="counterprod9">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod9')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop9('shopcar')" >Comprar</button>
                 </div>
             </div>
         </div>
@@ -253,10 +260,10 @@
                     <h6 class="card-title">Amendoim Dori 320gr</h6>
                     <p>R$ 5,50</p>
                     <div id="counter">
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                        <span id="counterprod4">0</span>
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                        <a href="#" class="btn btn-warning p-1">Comprar</a>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod10')"> - </button>
+                        <span id="counterprod10">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod10')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop10('shopcar')" >Comprar</button>
                     </div>
                 </div>
             </div>
@@ -266,10 +273,10 @@
                     <h6 class="card-title">Salgadinho Cheetos 57gr</h6>
                     <p>R$ 5,89</p>
                     <div id="counter">
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                        <span id="counterprod4">0</span>
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                        <a href="#" class="btn btn-warning p-1">Comprar</a>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod11')"> - </button>
+                        <span id="counterprod11">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod11')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop11('shopcar')" >Comprar</button>
                     </div>
                 </div>
             </div>
@@ -279,10 +286,10 @@
                     <h6 class="card-title">Salgadinho Ruffles 57gr</h6>
                     <p>R$ 5, 89</p>
                     <div id="counter">
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                        <span id="counterprod4">0</span>
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                        <a href="#" class="btn btn-warning p-1">Comprar</a>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod12')"> - </button>
+                        <span id="counterprod12">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod12')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop12('shopcar')" >Comprar</button>
                     </div>
                 </div>
             </div>
@@ -292,10 +299,10 @@
                     <h6 class="card-title">Salgadinho Doritos 276gr</h6>
                     <p>R$ 7,95</p>
                     <div id="counter">
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                        <span id="counterprod4">0</span>
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                        <a href="#" class="btn btn-warning p-1">Comprar</a>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod13')"> - </button>
+                        <span id="counterprod13">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod13')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop13('shopcar')" >Comprar</button>
                     </div>
                 </div>
             </div>
@@ -305,10 +312,10 @@
                     <h6 class="card-title">Engov After Tangerina 250ml</h6>
                     <p>R$ 6,99</p>
                     <div id="counter">
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                        <span id="counterprod4">0</span>
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                        <a href="#" class="btn btn-warning p-1">Comprar</a>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod14')"> - </button>
+                        <span id="counterprod14">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod14')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop14('shopcar')" >Comprar</button>
                     </div>
                 </div>
             </div>
@@ -318,10 +325,10 @@
                     <h6 class="card-title">Chocolate Bis Branco 126gr</h6>
                     <p>R$ 5,29</p>
                     <div id="counter">
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                        <span id="counterprod4">0</span>
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                        <a href="#" class="btn btn-warning p-1">Comprar</a>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod15')"> - </button>
+                        <span id="counterprod15">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod15')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop15('shopcar')" >Comprar</button>
                     </div>
                 </div>
             </div>
@@ -331,10 +338,10 @@
                     <h6 class="card-title">Saco de Gelo 800gr</h6>
                     <p>R$ 7,95</p>
                     <div id="counter">
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                        <span id="counterprod4">0</span>
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                        <a href="#" class="btn btn-warning p-1">Comprar</a>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod16')"> - </button>
+                        <span id="counterprod16">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod16')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop16('shopcar')" >Comprar</button>
                     </div>
                 </div>
             </div>
@@ -344,10 +351,10 @@
                     <h6 class="card-title">Isqueiro Bic Grande Vermelho</h6>
                     <p>R$ 4,50</p>
                     <div id="counter">
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                        <span id="counterprod4">0</span>
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                        <a href="#" class="btn btn-warning p-1">Comprar</a>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod17')"> - </button>
+                        <span id="counterprod17">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod17')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop17('shopcar')" >Comprar</button>
                     </div>
                 </div>
             </div>
@@ -357,10 +364,10 @@
                     <h6 class="card-title">Baralho Copag com 54 cartas</h6>
                     <p>R$ 14,95</p>
                     <div id="counter">
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
-                        <span id="counterprod4">0</span>
-                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
-                        <a href="#" class="btn btn-warning p-1">Comprar</a>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod18')"> - </button>
+                        <span id="counterprod18">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod18')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop18('shopcar')" >Comprar</button>
                     </div>
                 </div>
             </div>
@@ -378,9 +385,9 @@
             <a href="https://github.com/fenguel"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
         </div>
     </footer>
+    <script src="assets/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
-    crossorigin="anonymous">
-    </script>
+    crossorigin="anonymous"></script>
 </body>
 </html>
