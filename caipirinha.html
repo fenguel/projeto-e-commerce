@@ -1,79 +1,188 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="images/icon-silvana.png">
-    <title>SILVANA DELIVERY</title>
+    <title>Silvana Delivery</title>
 </head>
-<body>
-    <header id="header">
-        <section id="nav">
-            <div id="logo">
-                <a href="index.html"><img class= "logo" src="images/logo-novacor.png" alt="Logo Silvana Delivery"></a>   
-            </div>
-            <div id="links">
-                <a class="linksheader" href="index.html"><p class="textoheader">HOME</p></a>
-                <a class="linksheader" href="receitas.html"><p class="textoheader">RECEITAS</p></a>
-            </div>
-            <div id="icones">
-                <img class="icones" src="images/search.svg" alt="Busca">
-                <img class="icones" src="images/user.svg" alt="Usuário">
-                <img class="icones" src="images/shopping-cart.svg" alt="Carrinho">           
-            </div>   
-        </section>
-    </header>
+<header>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Dosis:wght@400;700&family=Lato:wght@400;700&family=Monda:wght@400;700&family=Montserrat&family=Open+Sans&family=Poppins:wght@400;600&family=Roboto&family=Saira+Condensed:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap');
 
-    <div class="bodyreceitas">
-    <main>
-        <section class="drink">
-            <img class="imagemprincipal" src="images/caipirinha.jpg" alt="Drink Caipirinha">
-            <h2>Caipirinha</h2>
-            <h3>Ingredientes</h3>
-            <ul>
-                <li>1 limão</li>
-                <li>1 colheres de açúcar</li>
-                <li>Cachaça</li>
-                <li>Gelo</li>
+        * {
+            font-family: 'Dosis', sans-serif;
+            font-weight: 700;
+        }
+    
+        main {
+            height:max-content;
+            background-image: linear-gradient(#f09b56, #ffe17de7);
+            margin: 0em;
+            margin-top: 70px;
+            padding: 2em;
+            justify-content: center;
+        }
+       
+        h3, h4 {
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h3 {
+            margin: 70px;
+        }
+
+        h4 {
+            color: white;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .navbar {
+            margin: 0;
+        }
+        .card-body {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .btn-custm {
+            border-radius: 50px;
+            --bs-btn-padding-y: .05rem; 
+            --bs-btn-padding-x: .4rem; 
+            --bs-btn-font-size: .80rem;
+        }
+
+        .geral {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /*Footer*/
+        #footer {
+            background-color: #212529;
+            height: 100px;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-footer {
+            width: 24px;
+            padding: 0;
+            margin: 10px;
+        }
+        .footer-texto {
+            word-spacing: 2px;
+            margin: 0 20px 0 20px;
+        }
+        .gits {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+      <nav class="navbar fixed-top navbar-expand-lg bg-dark row justify-content-md-center">
+        <div class="container-fluid  navbar-collapse collapse">  
+            <a class="navbar-brand" href="bootstrap.html">
+                <img src="./images/MENOR-LOGO (2).png" alt="logo-silvana-drinks" width="150">
+            </a>
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="bootstrap.html"><h4>INICIO</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="receitas.html"><h4>RECEITAS</h4></a>
+                </li>
             </ul>
-            <h3>Modo de Preparo</h3>
-            <ol>
-                <li>Pegue o limão coloque-o na horizontal e <br>retire as duas pontas,vire-o na vertical e <br>corte-o ao meio, retire os meio (parte branca)<br> do limão e fatie.</li>
-                <li>Coloque o limão fatiado e duas colheres bem cheias<br> de açúcar dentro de um copo próprio para a bebida<br> e com um socador esprema até que saia todo o suco do limão.</li>
-                <li>Coloque pedras de gelo até quase encher o copo<br> (aproximadamente 12 pedras pequenas de gelo)<br> e encha o copo com a cachaça.</li>
-                <li>Mexa bem com uma colher ou coloque<br> em uma coqueteleira e sirva-se!</li>
-            </ol>
-            <p></p>
-        </section>
-    </main>
-    <aside class="drinks_aside">
-        <div class="boxdrinks">
-            <a href="receitas.html"><img class="imagensdrinks" src="images/cosmopolitan.jpg" alt="Drink Cosmopolitan"></a>
-            <h2>Cosmopolitan</h2>
+            <form class="d-flex col-md-4" role="search">
+                <input class="form-control me-2" type="search" placeholder="Quero comprar..." aria-label="Pesquisar">
+                <button class="btn btn-outline-light" type="submit">⌕</button>
+            </form>   
+            <div class="nav justify-content-end col col-lg-2">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/user.svg" alt="Usuário" width="30">
+                </a>
+                <div style="position: relative;">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/shopping-cart.svg" alt="Usuário" width="30">
+                        <div style="position: absolute;">
+                            <button type="button" class="btn btn-danger btn-sm" id="shopcartnav">
+                                <span aria-hidden="true" id="shopcar">0</span> 
+                              </button> 
+                          </div>  
+                </div> 
+                </a>
+            </div>
         </div>
-        <div class="boxdrinks">
-            <a href="sexonthebeach.html"><img class="imagensdrinks" src="images/sexonthebeach.jpg" alt="Drink Sex on the beach"></a>
-            <h2>Sex on the beach</h2>
-        </div>
-        <div class="boxdrinks">
-            <a href="mojito.html"><img class="imagensdrinks" src="images/mojito.jpg" alt="Drink Mojito"></a>
-            <h2>Mojito</h2>
-        </div>
-    </aside>
-</div>
-<footer id="footer">
-    <div class="footer-texto"><p>Feito por:</p></div>
-    <div class="gits">
-        <p>Karine Maiero</p>
-        <a href="https://github.com/KarineMaiero"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
-    </div>
-    <div class="gits">
-        <p>Felipe de Lima Rosa</p>
-        <a href="https://github.com/fenguel"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
-    </div>
-</footer>
+      </nav>
+</header>
 
+<body>
+  
+    <div class="bodyreceitas">
+        <main>
+            <section class="drink">
+                <img class="imagemprincipal" src="images/caipirinha.jpg" alt="Drink Caipirinha">
+                <h2>Caipirinha</h2>
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>1 limão</li>
+                    <li>1 colheres de açúcar</li>
+                    <li>Cachaça</li>
+                    <li>Gelo</li>
+                </ul>
+                <h3>Modo de Preparo</h3>
+                <ol>
+                    <li>Pegue o limão coloque-o na horizontal e <br>retire as duas pontas,vire-o na vertical e <br>corte-o ao meio, retire os meio (parte branca)<br> do limão e fatie.</li>
+                    <li>Coloque o limão fatiado e duas colheres bem cheias<br> de açúcar dentro de um copo próprio para a bebida<br> e com um socador esprema até que saia todo o suco do limão.</li>
+                    <li>Coloque pedras de gelo até quase encher o copo<br> (aproximadamente 12 pedras pequenas de gelo)<br> e encha o copo com a cachaça.</li>
+                    <li>Mexa bem com uma colher ou coloque<br> em uma coqueteleira e sirva-se!</li>
+                </ol>
+                <p></p>
+            </section>
+        </main>
+        <aside class="drinks_aside">
+            <div class="boxdrinks">
+                <a href="receitas.html"><img class="imagensdrinks" src="images/cosmopolitan.jpg" alt="Drink Cosmopolitan"></a>
+                <h2>Cosmopolitan</h2>
+            </div>
+            <div class="boxdrinks">
+                <a href="sexonthebeach.html"><img class="imagensdrinks" src="images/sexonthebeach.jpg" alt="Drink Sex on the beach"></a>
+                <h2>Sex on the beach</h2>
+            </div>
+            <div class="boxdrinks">
+                <a href="mojito.html"><img class="imagensdrinks" src="images/mojito.jpg" alt="Drink Mojito"></a>
+                <h2>Mojito</h2>
+            </div>
+        </aside>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-texto"><p>Feito por:</p></div>
+        <div class="gits">
+            <p class="pfooter">Karine Maiero</p>
+            <a href="https://github.com/KarineMaiero"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
+        </div>
+        <div class="gits">
+            <p class="pfooter">Felipe de Lima Rosa</p>
+            <a href="https://github.com/fenguel"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
+        </div>
+    </footer>
+    <script src="assets/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+    crossorigin="anonymous"></script>
 </body>
 </html>
