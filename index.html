@@ -4,185 +4,316 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css" />
-    <link rel="icon" type="image/x-icon" href="./images/icon-silvana.png">
-    <title>SILVANA DELIVERY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/icon-silvana.png">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Silvana Delivery</title>
 </head>
-    <body>
-    <header id="header">
-        <section id="nav">
-            <div id="logo">
-                <a href="index.html"><img class= "logo" src="images/logo-novacor.png" alt="Logo Silvana Delivery"></a>   
+<header>
+      <nav class="navbar fixed-top navbar-expand-lg bg-dark row justify-content-md-center">
+        <div class="container-fluid  navbar-collapse collapse">  
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/MENOR-LOGO (2).png" alt="Logo da página Silvana Delivery, contendo o nome da marca e um copo de drink meio cheio com um palito" width="150">
+            </a>
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html"><h4>INICIO</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="receitas.html"><h4>RECEITAS</h4></a>
+                </li>
+            </ul>
+            <form class="d-flex col-md-4" role="search">
+                <input class="form-control me-2" type="search" placeholder="Quero comprar..." aria-label="Pesquisar">
+                <button class="btn btn-outline-light" type="submit">⌕</button>
+            </form>   
+            <div class="nav justify-content-end col col-lg-2">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/user.svg" alt="Usuário" width="30">
+                </a>
+                <div style="position: relative;">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/shopping-cart.svg" alt="Usuário" width="30">
+                        <div style="position: absolute;">
+                            <button type="button" class="btn btn-danger btn-sm" id="shopcartnav">
+                                <span aria-hidden="true" id="shopcar">0</span> 
+                              </button> 
+                          </div>  
+                </div> 
+                </a>
             </div>
-            <div id="links">
-                <a class="linksheader" href="index.html"><p class="textoheader">HOME</p></a>
-                <a class="linksheader" href="receitas.html"><P class="textoheader">RECEITAS</P></a>
-            </div>
-            <div id="icones">
-                <img class="icones" src="images/search.svg" alt="Busca">
-                <img class="icones" src="images/user.svg" alt="Usuário">
-                <img class="icones" src="images/shopping-cart.svg" alt="Carrinho">           
-            </div>   
-        </section>
-    </header>
-<main>
-    <h2>BEBIDAS</h2>
-<section class="produtos_geral">
-    <img class="setas" src="images/chevrons-left.svg" alt="Seta para direita">
-
-    <div class="container_produtos" id="prod1">
-        <p>Cerveja Original 350ml</p>
-        <img class="produtos" src="images/cerveja-original-pilsen-350ml.jpg" alt="Cerveja Original">
-        <div id="counter">
-            <button class="botao-contador" name="subtrair" onclick="decrement('counterprod1')">-</button>
-            <span id="counterprod1">0</span>
-            <button class="botao-contador" name="adicionar" onclick="increment('counterprod1')">+</button>
         </div>
-        <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 3,29</p>
-    </div>
+      </nav>
+</header>
 
-    <div class="container_produtos" id="prod2">
-        <p>Cerveja Buddweiser 350ml</p>
-        <img class="produtos" src="images/cerveja_budweiser_lata_269ml_1e927d59-7383-4321-b6cb-d5b0e6d83e85.jpg" alt="Cerveja Buddweiser">
-        <div id="counter">
-            <button name="subtrair" onclick="decrement('counterprod2')">-</button>
-            <span id="counterprod2">0</span>
-            <button name="adicionar" onclick="increment('counterprod2')">+</button>
-        </div>
-        <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 2,99</p>
-    </div>
+<body>
+    <main>
+    <div class="geral">
+    <section class="produtos">
+        <h3>BEBIDAS</h3>
+        <div class="row row-cols-1 row-cols-md-3">
 
-    <div class="container_produtos" id="prod3">
-        <p>Cerveja Colorado 600ml</p>
-        <img class="produtos" src="images/colorado-appia.jpg" alt="Cerveja Colorado">
-        <div id="counter">
-            <button name="subtrair" onclick="decrement('counterprod3')">-</button>
-            <span id="counterprod3">0</span>
-            <button name="adicionar" onclick="increment('counterprod3')">+</button>
-         </div>
-         <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 8,99</p>
-    </div>
-
-    <div class="container_produtos" id="prod4">
-        <p>Coca-Cola 2l</p>
-        <img class="produtos" src="images/coca.jpg" alt="Coca-Cola">
-        <div id="counter">
-            <button name="subtrair" onclick="decrement('counterprod4')">-</button>
-            <span id="counterprod4">0</span>
-            <button name="adicionar" onclick="increment('counterprod4')">+</button>
-         </div>
-         <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 6,99</p>
-    </div>
-
-    <div class="container_produtos" id="prod5">
-       <p>Guaraná Antártica 2l</p>
-        <img class="produtos" src="images/refrigerante-guarana-antarctica-2l.jpg" alt="Guaraná Antártica">
-        <div id="counter">
-            <button name="subtrair" onclick="decrement('counterprod5')">-</button>
-            <span id="counterprod5">0</span>
-            <button name="adicionar" onclick="increment('counterprod5')">+</button>
-         </div>
-         <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 6,99</p>
-    </div>
-
-    <div class="container_produtos" id="prod6">
-        <p>Água Mineral 500ml</p>
-        <img class="produtos" src="images/agua.jpg" alt="Água">
-        <div id="counter">
-            <button name="subtrair" onclick="decrement('counterprod6')">-</button>
-            <span id="counterprod6">0</span>
-            <button name="adicionar" onclick="increment('counterprod6')">+</button>
-         </div>
-         <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 1,99</p>
-    </div>
-
-    <img class="setas" src="images/chevrons-right.svg" alt="Seta para esquerda">
-</section>
-    <h2>CONVENIÊNCIA</h2>
-<section class="produtos_geral">
-    <img class="setas" src="images/chevrons-left.svg" alt="Seta para direita">
-
-    <div class="container_produtos" id="prod7">
-        <p>Isqueiro Bic Grande</p>
-        <img class="produtos" src="images/isqueiro-bic-maxi-j6.jpg" alt="Isqueiro">
-        <div id="counter">
-            <button name="subtrair" onclick="decrement('counterprod7')">-</button>
-            <span id="counterprod7">0</span>
-            <button name="adicionar" onclick="increment('counterprod7')">+</button>
-         </div>
-         <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 4,50</p>
-    </div>
-
-    <div class="container_produtos" id="prod8">
-        <p>Amendoim Dori 320gr</p>
-        <img class="produtos" src="images/amendoim.jpg" alt="Amendoim">
-        <div id="counter">
-            <button name="subtrair" onclick="decrement('counterprod8')">-</button>
-            <span id="counterprod8">0</span>
-            <button name="adicionar" onclick="increment('counterprod8')">+</button>
-         </div>
-         <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 5,50</p>
-    </div>
-
-    <div class="container_produtos" id="prod9">
-        <p>Cheetos 57gr</p>
-        <img class="produtos" src="images/cheetos.jpg" alt="Cheetos">
-        <div id="counter">
-            <button name="subtrair" onclick="decrement('counterprod9')">-</button>
-            <span id="counterprod9">0</span>
-            <button name="adicionar" onclick="increment('counterprod9')">+</button>
-         </div>
-         <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 6,79</p>
-    </div>
-
-    <div class="container_produtos" id="prod10">
-        <p>Ruffles 57gr</p>
-        <img class="produtos" src="images/ruffles.jpg" alt="Ruffles">
-        <div id="counter">
-            <button name="subtrair" onclick="decrement('counterprod10')">-</button>
-            <span id="counterprod10">0</span>
-            <button name="adicionar" onclick="increment('counterprod10')">+</button>
-         </div>
-         <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 6,79</p>
-    </div>
-    
-    <div class="container_produtos" id="prod11">
-        <p>Gelo 800gr</p>
-        <img class="produtos" src="images/gelo_cubo_800g_ac2bab6e-04d4-42a1-a536-c7496b293b05.jpg" alt="Ruffles">
-        <div id="counter">
-            <button name="subtrair" onclick="decrement('counterprod11')">-</button>
-            <span id="counterprod11">0</span>
-            <button name="adicionar" onclick="increment('counterprod11')">+</button>
-        </div>
-        <button class="botao-comprar" name="comprar">Comprar</button>
-        <p class="preco">R$ 6,79</p>
-    </div>
-
-    <img class="setas" src="images/chevrons-right.svg" alt="Seta para esquerda">
-</section>
-
-</main>
-        <footer id="footer">
-            <div class="footer-texto"><p>Feito por:</p></div>
-            <div class="gits">
-                <p>Karine Maiero</p>
-                <a href="https://github.com/KarineMaiero"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
+        <div class="card text-center m-3 p-1" style="width: 10rem;">
+            <img src="./images/cerveja-original-pilsen-350ml.jpg" class="card-img-top" alt="Lata de cerveja Original branca com logo azul e amarelo, tamanho 350ml">
+            <div class="card-body">
+                <h6 class="card-title">Cerveja Original 350ml</h6>
+                <p>R$ 3,29</p>
+                <div id="counter">
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod1')"> - </button>
+                    <span id="counterprod1">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod1')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop1('shopcar')" >Comprar</button>
+                </div>
             </div>
-            <div class="gits">
-                <p>Felipe de Lima Rosa</p>
-                <a href="https://github.com/fenguel"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
+        </div>
+        <div class="card text-center m-3 p-1" style="width: 10rem;">
+            <img src="./images/cerveja_budweiser_lata_269ml_1e927d59-7383-4321-b6cb-d5b0e6d83e85.jpg" class="card-img-top" alt="Lata de cerveja Buddweiser vermelha com logo branco e azul, tamanho 350ml">
+            <div class="card-body">
+                <h6 class="card-title">Cerveja Buddweiser 350ml</h6>
+                <p>R$ 3,79</p>
+                <div id="counter">
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod2')"> - </button>
+                    <span id="counterprod2">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod2')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop2('shopcar')" >Comprar</button>
+                </div>
             </div>
-        </footer>
-            <script src="assets/app.js"></script>
-    </body>
+        </div>
+        <div class="card text-center m-3 p-1" style="width: 10rem;">
+            <img src="./images/cerveja-eisenbahn_350.jpg" class="card-img-top" alt="Lta de cerveja Eisenbahn amarela com logo preta e vermelha, tamanho 350ml">
+            <div class="card-body">
+                <h6 class="card-title">Cerveja Eisenbahn 350ml</h6>
+                <p>R$ 3,99</p>
+                <div id="counter">
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod3')"> - </button>
+                    <span id="counterprod3">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod3')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop3('shopcar')" >Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card text-center m-3 p-1" style="width: 10rem;">
+            <img src="./images/cerveja-imperio-269ml.jpg" class="card-img-top" alt="Lata de Cerveja Império branca com logo dourada, tamanho 269ml">
+            <div class="card-body">
+                <h6 class="card-title">Cerveja Império 269ml</h6>
+                <p>R$ 2,39</p>
+                <div id="counter">
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod4')"> - </button>
+                    <span id="counterprod4">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod4')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop4('shopcar')" >Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card text-center m-3 p-1" style="width: 10rem;">
+            <img src="./images/cerveja-heineken-premium-quality-250ml-garrafa.jpg" class="card-img-top" alt="Garrafa longneck de cerveja Heineken verde com logo branca e preta, tamanho 250ml">
+            <div class="card-body">
+                <h6 class="card-title">Cerveja Heineken 250ml</h6>
+                <p>R$ 4,49</p>
+                <div id="counter">
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod5')"> - </button>
+                    <span id="counterprod5">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod5')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop5('shopcar')" >Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card text-center m-3 p-1" style="width: 10rem;">
+            <img src="./images/colorado-appia.jpg" class="card-img-top" alt="Garrafa de vidro de Cerveja Colorado marrom com logo colorido impresso, tamanho 600ml">
+            <div class="card-body">
+                <h6 class="card-title">Cerveja Colorado 600ml</h6>
+                <p>R$ 8,99</p>
+                <div id="counter">
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod6')"> - </button>
+                    <span id="counterprod6">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod6')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop6('shopcar')" >Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card text-center m-3 p-1" style="width: 10rem;">
+            <img src="./images/coca.jpg" class="card-img-top" alt="Garrafa plástica de Coca-Cola, tamanho 2L, com líquido preto, tampa vermelha e etiqueta vermelha com a marca impressa">
+            <div class="card-body">
+                <h6 class="card-title">Refrigerante Coca-Cola 2l</h6>
+                <p>R$ 6,99</p>
+                <div id="counter">
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod7')"> - </button>
+                    <span id="counterprod7">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod7')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop7('shopcar')" >Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card text-center m-3 p-1" style="width: 10rem;">
+            <img src="./images/refrigerante-guarana-antarctica-2l.jpg" class="card-img-top" alt="Garrafa plástica de Guaraná Antártica com líquido verde, rótulo verde com a marca impressa e tampa vermelha, tamanho 2 litros">
+            <div class="card-body">
+                <h6 class="card-title">Guaraná Antártica 2l</h6>
+                <p>R$ 6,99</p>
+                <div id="counter">
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod8')"> - </button>
+                    <span id="counterprod8">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod8')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop8('shopcar')" >Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card text-center m-3 p-1" style="width: 10rem;">
+            <img src="./images/agua.jpg" class="card-img-top" alt="Garrafa plástica de água mineiras com rótulo impresso com a marca Crystal em branco e azul, com tampa azul clara e tamanho de 500ml">
+            <div class="card-body">
+                <h6 class="card-title">Água Mineral 500ml</h6>
+                <p>R$ 2,99</p>
+                <div id="counter">
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod9')"> - </button>
+                    <span id="counterprod9">0</span>
+                    <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod9')">+</button>
+                    <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop9('shopcar')" >Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div class="geral">
+
+    <section class="produtos">
+        <h3>CONVENIÊNCIA</h3>
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="card text-center m-3 p-1" style="width: 10rem;">
+                <img src="./images/amendoim.jpg" class="card-img-top" alt="Pacote de amendoim torrado da marca Dori, com imagem de amendoim, logo da marca, tamanho 320gr">
+                <div class="card-body">
+                    <h6 class="card-title">Amendoim Dori 320gr</h6>
+                    <p>R$ 5,50</p>
+                    <div id="counter">
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod10')"> - </button>
+                        <span id="counterprod10">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod10')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop10('shopcar')" >Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-3 p-1" style="width: 10rem;">
+                <img src="./images/cheetos.jpg" class="card-img-top" alt="Pacote de salgadinho Cheetos na cor laranja com logo da marca e tamanho de 57gr">
+                <div class="card-body">
+                    <h6 class="card-title">Salgadinho Cheetos 57gr</h6>
+                    <p>R$ 5,89</p>
+                    <div id="counter">
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod11')"> - </button>
+                        <span id="counterprod11">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod11')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop11('shopcar')" >Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-3 p-1" style="width: 10rem;">
+                <img src="./images/ruffles.jpg" class="card-img-top" alt=".Pacote de salgadinho Ruffles na cor Azul com logo da marca e tamanho de 57gr">
+                <div class="card-body">
+                    <h6 class="card-title">Salgadinho Ruffles 57gr</h6>
+                    <p>R$ 5, 89</p>
+                    <div id="counter">
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod12')"> - </button>
+                        <span id="counterprod12">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod12')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop12('shopcar')" >Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-3 p-1" style="width: 10rem;">
+                <img src="./images/doritos.png" class="card-img-top" alt="Pacote de salgadinho Doritos na cor vermelha com logo da marca e tamanho de 57gr">
+                <div class="card-body">
+                    <h6 class="card-title">Salgadinho Doritos 276gr</h6>
+                    <p>R$ 7,95</p>
+                    <div id="counter">
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod13')"> - </button>
+                        <span id="counterprod13">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod13')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop13('shopcar')" >Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-3 p-1" style="width: 10rem;">
+                <img src="./images/engov-after.jpg" class="card-img-top" alt="imagem de três garrafas de Engov, na cor laranja, com a marca e instrussões impressos no rótulos, tamanho 250ml cada">
+                <div class="card-body">
+                    <h6 class="card-title">Engov After Tangerina 250ml</h6>
+                    <p>R$ 6,99</p>
+                    <div id="counter">
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod14')"> - </button>
+                        <span id="counterprod14">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod14')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop14('shopcar')" >Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-3 p-1" style="width: 10rem;">
+                <img src="./images/bis_Branco_Lacta_126G.png" class="card-img-top" alt="Imagem de um pacote de chocholate Bis Branco, com embalagem na cor azul e branco com marca impressa, tamanho 126gr">
+                <div class="card-body">
+                    <h6 class="card-title">Chocolate Bis Branco 126gr</h6>
+                    <p>R$ 5,29</p>
+                    <div id="counter">
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod15')"> - </button>
+                        <span id="counterprod15">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod15')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop15('shopcar')" >Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-3 p-1" style="width: 10rem;">
+                <img src="./images/gelo_cubo_800g_ac2bab6e-04d4-42a1-a536-c7496b293b05.jpg" class="card-img-top" alt="Pacote plástico de Gelo, transparente, com logo e marca impressas na embalagem, tamanho 800gr">
+                <div class="card-body">
+                    <h6 class="card-title">Saco de Gelo 800gr</h6>
+                    <p>R$ 7,95</p>
+                    <div id="counter">
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod16')"> - </button>
+                        <span id="counterprod16">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod16')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop16('shopcar')" >Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-3 p-1" style="width: 10rem;">
+                <img src="./images/isqueiro-bic-maxi-j6.jpg" class="card-img-top" alt="Imagem de um isqueiro vermelho da marca Bic">
+                <div class="card-body">
+                    <h6 class="card-title">Isqueiro Bic Grande Vermelho</h6>
+                    <p>R$ 4,50</p>
+                    <div id="counter">
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod17')"> - </button>
+                        <span id="counterprod17">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod17')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop17('shopcar')" >Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center m-3 p-1" style="width: 10rem;">
+                <img src="./images/baralho-copag-139.jpg" class="card-img-top" alt="Imagem de um baralho branco e vermelho da marca Copag com 54 cartas">
+                <div class="card-body">
+                    <h6 class="card-title">Baralho Copag com 54 cartas</h6>
+                    <p>R$ 14,95</p>
+                    <div id="counter">
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod18')"> - </button>
+                        <span id="counterprod18">0</span>
+                        <button class="btn btn-warning btn-sm btn-custm m-1" name="adicionar" onclick="increment('counterprod18')">+</button>
+                        <button type="button" class="btn btn-warning p-1" id="button1" onclick="incrementShop18('shopcar')" >Comprar</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-texto"><p>Feito por:</p></div>
+        <div class="gits">
+            <p class="pfooter">Karine Maiero</p>
+            <a href="https://github.com/KarineMaiero"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
+        </div>
+        <div class="gits">
+            <p class="pfooter">Felipe de Lima Rosa</p>
+            <a href="https://github.com/fenguel"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
+        </div>
+    </footer>
+    <script src="assets/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+    crossorigin="anonymous"></script>
+</body>
 </html>

@@ -77,3 +77,33 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+/* PÁGINAS SECUNDÁRIAS */
+
+#main-img {
+    max-width: 600px;
+    margin-top: 80px;
+    border-radius: 5%;
+    border-style: dashed;
+    border-width: 3px;
+}
+
+.aside {
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px rgb(186, 100, 100);
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.sec-img {
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(178, 93, 93);
+}
+
+.lists {
+    text-align: justify;
+    padding: 50px;
+}
