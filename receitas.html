@@ -1,0 +1,112 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/icon-silvana.png">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Silvana Delivery</title>
+</head>
+<header>
+    
+      <nav class="navbar fixed-top navbar-expand-lg bg-dark row justify-content-md-center">
+        <div class="container-fluid  navbar-collapse collapse">  
+            <a class="navbar-brand" href="bootstrap.html">
+                <img src="./images/MENOR-LOGO (2).png" alt="logo-silvana-drinks" width="150">
+            </a>
+            <ul class="nav justify-content-start">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="bootstrap.html"><h4>INICIO</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="receitas.html"><h4>RECEITAS</h4></a>
+                </li>
+            </ul>
+            <form class="d-flex col-md-4" role="search">
+                <input class="form-control me-2" type="search" placeholder="Quero comprar..." aria-label="Pesquisar">
+                <button class="btn btn-outline-light" type="submit">⌕</button>
+            </form>   
+            <div class="nav justify-content-end col col-lg-2">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/user.svg" alt="Usuário" width="30">
+                </a>
+                <div style="position: relative;">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/shopping-cart.svg" alt="Usuário" width="30">
+                        <div style="position: absolute;">
+                            <button type="button" class="btn btn-danger btn-sm" id="shopcartnav">
+                                <span aria-hidden="true" id="shopcar">0</span> 
+                              </button> 
+                          </div>  
+                </div> 
+                </a>
+            </div>
+        </div>
+      </nav>
+</header>
+
+<body>
+  
+        <main class="container-fluid overflow-hidden px-5 text-center">
+            <div class="row gx-5">
+                <section class="col align-items-start">
+                 <img id="main-img" class="card-img-top" src="images/cosmopolitan.jpg" alt="Imagem do drink Cosmopolitan em cima de um balcão de madeira com um fundo desfocado de prateleiras de bebidas. O drink está servido em uma taça de martini de vidro com uma rodela de limão presa na borda.">
+                    <div class="text-center">
+                        <h2>Cosmopolitan</h2>
+                    <h3>Ingredientes</h3>
+                    <ul class="lists">
+                        <li>1 dose de vodka</li>
+                        <li>1 limão (suco)</li>
+                        <li>50ml suco de cranberry</li>
+                        <li>1 dose de licor de laranja</li>
+                        <li>Gelo</li>
+                    </ul>
+                    <h3>Modo de Preparo</h3>
+                    <ol class="lists">
+                        <li>Misture tudo em uma coqueteleira.</li><br>
+                        <li>Sirva num copo bem gelado sem deixar cair gelo da coqueteleira no copo.</li><br>
+                     <li>Decore com a casca do limão na borda.</li>
+                    </ol>
+                    <p></p>
+                    </div>
+                </section>
+        
+    
+            <aside class="aside col-sm-4 align-items-start">
+                <div>
+                    <a href="caipirinha.html"><img class="sec-img card-img-top" src="images/caipirinha.jpg" alt="Imagem de dois drinks em uma mesa de mandeira com 4 limões, sendo um deles cortado ao meio. Os drinks são capirinhas feitos em copo de vidro, com liquido, gelo, folhas de hortelã dentro, com uma rodela de hortelã presa na borda e dois canudos curtos."></a>
+                    <h2>Cosmopolitan</h2>
+                </div>
+                <div class="boxdrinks">
+                    <a href="sexonthebeach.html"><img class="sec-img card-img-top" src="images/sexonthebeach.jpg" alt="Imagem de dois drinks Sex on The Beach em um balcão com limões fatiados e gelos espalhados e com fundo desfocado de garrafas. Os drinks estão servidos em taças de vidro com cerejas presas na borda e dois canudos."></a>
+                    <h2>Sex on the beach</h2>
+                </div>
+                <div class="boxdrinks">
+                    <a href="mojito.html"><img class="sec-img card-img-top" src="images/mojito.jpg" alt="Imagem de dois drinks Mojito em uma bandeija em cima de uma mesa de madeira. Na bandeija há um limão inteiro, a metade de outro e duas estrelas de 5 pontas feita a partir de uma fruta. Os drinks estão dentro de um copo de vidro com gelo e na borda do copo há uma rodela de limão e duas folhas de hortelã, e também um canudo."></a>
+                    <h2>Mojito</h2>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer-texto"><p>Feito por:</p></div>
+        <div class="gits">
+            <p class="pfooter">Karine Maiero</p>
+            <a href="https://github.com/KarineMaiero"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
+        </div>
+        <div class="gits">
+            <p class="pfooter">Felipe de Lima Rosa</p>
+            <a href="https://github.com/fenguel"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
+        </div>
+    </footer>
+    <script src="assets/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
