@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Dosis:wght@400;700&family=Lato:wght@400;700&family=Monda:wght@400;700&family=Montserrat&family=Open+Sans&family=Poppins:wght@400;600&family=Roboto&family=Saira+Condensed:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+
+html, body, h2 {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+
+main {
+    background-image: linear-gradient(#daa25e, #c9a377);
+    /*background-color: #d6a973;*/
+    color: rgb(59, 20, 3);
+    -webkit-text-stroke: .6px #301302;
+    padding: 30px;
+    height: 100vh;
+}
+
+
+header {
+    background-color: #3b1600;
+    height: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+li {
+    font-size: 18px;
+}
+
+.logo {
+    height: 60px;
+    margin-left: 30px;
+}
+
+#nav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icones, .icones {
+    margin-right: 20px;    
+}
+
+.produtos {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 13px 50px -13px rgb(59, 20, 3);
+    border: 3px solid rgb(59, 20, 3);
+}
+
+#counter {
+    border-radius: 5px;
+}
+
+.produtos_geral {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.container_produtos {
+    text-align: center;
+    font-size: 20px;
+}
+
+.botao-comprar {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.preco {
+    margin-top: 0px;
+    padding: 0;
+}
+
+
+.bodyreceitas {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(#daa25e, #c9a377);
+    /*background-color: #D97904;*/
+}
+
+.drink {
+    margin: 60px;
+}
+
+.drinks_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 25px 0 25px 0;
+    color: rgb(59, 20, 3);
+}
+
+.boxdrinks {
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.imagensdrinks {
+    box-sizing: border-box;
+    height: 200px;
+    border-radius: 15px;
+    border: 3px solid rgb(59, 20, 3)
+}
+
+.imagemprincipal {
+    height: 300px;
+    margin-left: 35px;
+    border-radius: 15px;
+    border: 3px solid rgb(59, 20, 3);
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-evenly;
+}
+
+.linksheader {
+    text-decoration: none;
+    color: black;
+}
+
+.textoheader {
+    font-size: 24px;
+    height: 25px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: white
+}
+
+#footer {
+    background-color: black;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-footer {
+    width: 24px;
+    padding: 0;
+    margin: 10px;
+}
+
+.footer-texto {
+    word-spacing: 2px;
+    margin: 0 20px 0 20px;
+}
+
+.gits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+}
