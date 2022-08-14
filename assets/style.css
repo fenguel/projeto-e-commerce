@@ -5,7 +5,7 @@
     font-weight: 700;
 }
 
-main {
+main, aside {
     height:max-content;
     background-image: linear-gradient(#f09b56, #ffe17de7);
     margin: 0em;
