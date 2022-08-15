@@ -52,34 +52,7 @@ p {
     flex-wrap: wrap;
 }
 
-/*Footer*/
-#footer {
-    background-color: #212529;
-    height: 100px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.img-footer {
-    width: 24px;
-    padding: 0;
-    margin: 10px;
-}
-.footer-texto {
-    word-spacing: 2px;
-    margin: 0 20px 0 20px;
-}
-.gits {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-/* PÁGINAS SECUNDÁRIAS */
-
+/* PÁGINAS DRINKS */
 #main-img {
     max-width: 600px;
     margin-top: 80px;
@@ -106,4 +79,30 @@ h2 {
 .lists {
     text-align: justify;
     padding: 50px;
+}
+
+/*FOOTER*/
+#footer {
+    background-color: #212529;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.img-footer {
+    width: 24px;
+    padding: 0;
+    margin: 10px;
+}
+.footer-texto {
+    word-spacing: 2px;
+    margin: 0 20px 0 20px;
+}
+.gits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

@@ -38,40 +38,40 @@
 
     <header>
         <nav class="navbar fixed-top navbar-expand-lg bg-dark row justify-content-md-center">
-          <div class="container-fluid  navbar-collapse collapse">  
-              <a class="navbar-brand" href="index.html">
-                  <img src="./images/MENOR-LOGO (2).png" alt="Logo da página Silvana Delivery, contendo o nome da marca e um copo de drink meio cheio com um palito" width="150">
-              </a>
-              <ul class="nav justify-content-start">
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="index.html"><h4>INICIO</h4></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="receitas.html"><h4>RECEITAS</h4></a>
-                  </li>
-              </ul>
-              <form class="d-flex col-md-4" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Quero comprar..." aria-label="Pesquisar">
-                  <button class="btn btn-outline-light" type="submit">⌕</button>
-              </form>   
-              <div class="nav justify-content-end col col-lg-2">
-                  <a class="navbar-brand" href="#">
-                      <img src="./images/user.svg" alt="Usuário" width="30">
-                  </a>
-                  <div style="position: relative;">
-                      <a class="navbar-brand" href="#">
-                          <img src="./images/shopping-cart.svg" alt="Usuário" width="30">
-                          <div style="position: absolute;">
-                              <button type="button" class="btn btn-danger btn-sm" id="shopcartnav">
-                                  <span aria-hidden="true" id="shopcar">0</span> 
-                                </button> 
+            <div class="container-fluid  navbar-collapse collapse">  
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/MENOR-LOGO (2).png" alt="Logo da página Silvana Delivery, contendo o nome da marca e um copo de drink meio cheio com um palito" width="150">
+                </a>
+                <ul class="nav justify-content-start">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html"><h4>INICIO</h4></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="receitas.html"><h4>RECEITAS</h4></a>
+                    </li>
+                </ul>
+                <form class="d-flex col-md-4" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Quero comprar..." aria-label="Pesquisar">
+                    <button class="btn btn-outline-light" type="submit">⌕</button>
+                </form>   
+                <div class="nav justify-content-end col col-lg-2">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/user.svg" alt="Usuário" width="30">
+                    </a>
+                    <div style="position: relative;">
+                        <a class="navbar-brand" href="#">
+                            <img src="./images/shopping-cart.svg" alt="Usuário" width="30">
+                            <div style="position: absolute;">
+                                <button type="button" class="btn btn-danger btn-sm" id="shopcartnav">
+                                    <span aria-hidden="true" id="shopcar">0</span> 
+                                </button>  
                             </div>  
-                  </div> 
-                  </a>
-              </div>
-          </div>
+                    </div> 
+                    </a>
+                </div>
+            </div>
         </nav>
-  </header>
+    </header>
     <main>
     <div class="geral">
     <section class="produtos">
@@ -232,7 +232,7 @@
                 <img src="./images/ruffles.jpg" class="card-img-top" alt=".Pacote de salgadinho Ruffles na cor Azul com logo da marca e tamanho de 57gr">
                 <div class="card-body">
                     <h6 class="card-title">Salgadinho Ruffles 57gr</h6>
-                    <p>R$ 5, 89</p>
+                    <p>R$ 5,89</p>
                     <div id="counter">
                         <button class="btn btn-warning btn-sm btn-custm m-1" name="subtrair" onclick="decrement('counterprod12')"> - </button>
                         <span id="counterprod12">0</span>
@@ -242,7 +242,7 @@
                 </div>
             </div>
             <div class="card text-center m-3 p-1" style="width: 10rem;">
-                <img src="./images/doritos.png" class="card-img-top" alt="Pacote de salgadinho Doritos na cor vermelha com logo da marca e tamanho de 57gr">
+                <img src="./images/doritos.png" class="card-img-top" alt="Pacote de salgadinho Doritos na cor vermelha com logo da marca e tamanho de 276gr">
                 <div class="card-body">
                     <h6 class="card-title">Salgadinho Doritos 276gr</h6>
                     <p>R$ 7,95</p>
@@ -333,6 +333,19 @@
             <a href="https://github.com/fenguel"><img class="img-footer" src="images/github.svg" alt="GitHub"></a>
         </div>
     </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js">
+        </script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
