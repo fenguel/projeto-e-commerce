@@ -19,5 +19,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenguel/projeto-e-commerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fenguel/projeto-e-commerce/issues"
+  },
+  "homepage": "https://github.com/fenguel/projeto-e-commerce#readme"
 }
