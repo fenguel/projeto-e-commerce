@@ -6,6 +6,7 @@ const authController = require("../controllers/authController");
 
 router.get("/all", controller.getAll);
 router.post("/create", controller.createUser);
+router.put("/update", controller.updateUser);
 
 router.post("/login", authController.login);
 
