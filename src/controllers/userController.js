@@ -1,8 +1,8 @@
 const UserSchema = require("../models/userSchema");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const SECRET = process.env.SECRET
 
+const SECRET = process.env.SECRET
 
 const getAll = async (req, res) => {
    // db.people.find({}).pretty()
@@ -12,20 +12,23 @@ const getAll = async (req, res) => {
   if (!token) {
     return res.status(401).send("Erro no header")
   }
-    
+
   UserSchema.find(function (err, users) {
     if(err) {
       res.status(500).send({ message: err.message })
     }
       res.status(200).send(users)
   }) 
-}
 
-jwt.verify(token, SECRET, function(erro) {
-  if (err) {
-    return res.status(403).send('Não autorizado');
-  }
-});
+  jwt.verify(token, SECRET, function(erro) {
+    if (err) {
+      return res.status(403).send('Não autorizado');
+    }
+  });
+
+};
+
+
 
 const createUser = async (req, res) => {
   const hasedPassword = bcrypt.hashSync(req.body.password, 10)

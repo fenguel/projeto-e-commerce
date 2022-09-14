@@ -6,7 +6,7 @@ const connect = async () => {
     try {
         mongoose.connect(MONGODB_URI, {
             useNewUrlParser: true,
-            useUnifiedTopology: true,
+            useUnifiedTopology: true
         });
         console.log("Banco conectado");
     } catch (e) {

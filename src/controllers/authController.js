@@ -15,7 +15,7 @@ const login = (req, res) => {
             }
         });
 
-        const validPassword = bcrypt.compareSync(req.body.password, user.password);
+        const validPassword = bcrypt.compareSync(req.body.password, user.password)
 
         if(!validPassword) {
           return res.status(401).send({
