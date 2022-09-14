@@ -6,12 +6,12 @@ const SECRET = process.env.SECRET
 
 const getAll = async (req, res) => {
    // db.people.find({}).pretty()
-  const authHeader = req.get('authorization')
-  const token = authHeader.split(' ')[1];
+  // const authHeader = req.get('authorization')
+  // const token = authHeader.split(' ')[1];
 
-  if (!token) {
-    return res.status(401).send("Erro no header")
-  }
+  // if (!token) {
+  //   return res.status(401).send("Erro no header")
+  // }
 
   UserSchema.find(function (err, users) {
     if(err) {
@@ -20,11 +20,11 @@ const getAll = async (req, res) => {
       res.status(200).send(users)
   }) 
 
-  jwt.verify(token, SECRET, function(erro) {
-    if (err) {
-      return res.status(403).send('Não autorizado');
-    }
-  });
+  // jwt.verify(token, SECRET, function(erro) {
+  //   if (err) {
+  //     return res.status(403).send('Não autorizado');
+  //   }
+  // });
 
 };
 
