@@ -28,8 +28,6 @@ const getAll = async (req, res) => {
 
 };
 
-
-
 const createUser = async (req, res) => {
   const hasedPassword = bcrypt.hashSync(req.body.password, 10)
   req.body.password = hasedPassword
