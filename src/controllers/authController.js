@@ -13,8 +13,7 @@ const login = (req, res) => {
                     email: `${req.body.email}`
                 })
             }
-        });
-
+        
         const validPassword = bcrypt.compareSync(req.body.password, user.password)
 
         if(!validPassword) {
@@ -29,13 +28,14 @@ const login = (req, res) => {
             message: "Login autorizado",
             token
         });
-    }
+    })
+}
     catch (error) {
         res.status(500).json({
             message: error.message
         })
     }
-};
+}
 
 module.exports = {
     login
